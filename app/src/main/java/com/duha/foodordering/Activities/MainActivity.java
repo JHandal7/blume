@@ -260,7 +260,7 @@ public class MainActivity extends AppCompatActivity {
             if (SplashScreen.restaurantDetailResponseData.getCurrency().equalsIgnoreCase("USD"))
                 currency = "S/";
             else
-                currency = "₹";
+                currency = "S/";
         } catch (Exception e) {
             Log.d("currencyError",e.toString());
         }

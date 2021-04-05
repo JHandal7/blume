@@ -73,7 +73,8 @@ public class ProductExtra extends AppCompatActivity {
         for (int i = 0; i < RecommendedExtrasAdapter.extraPriceList.size(); i++) {
             totalAmount = totalAmount + RecommendedExtrasAdapter.extraPriceList.get(i);
         }
-        ProductExtra.totalAmount.setText(String.format("%.2f",totalAmount));
+        ProductExtra.totalAmount.setText(String.format("%.2f", totalAmount));
+        // ProductExtra.totalAmount.setText("");}
     }
 
     private void getIntentData() {
@@ -83,7 +84,9 @@ public class ProductExtra extends AppCompatActivity {
         orderLimit = intent.getStringExtra("productOrderLimit");
         textViewList.get(0).setText(productName);
         textViewList.get(2).setText("Precio: " + MainActivity.currency + " ");
+       // textViewList.get(2).setText(" ");
         textViewList.get(3).setText(MainActivity.currency + " ");
+        //textViewList.get(3).setText(" ");
         Picasso.with(ProductExtra.this)
                 .load(intent.getStringExtra("productImage"))
                 .placeholder(R.drawable.item_not_added)
@@ -95,6 +98,7 @@ public class ProductExtra extends AppCompatActivity {
         textViewList.get(4).setText(quantity + "");
         productPriceWithQuantity = (Double.parseDouble(productPrice)) * quantity;
         textViewList.get(1).setText(String.format("%.2f", productPriceWithQuantity));
+        //textViewList.get(1).setText("");
         setTotalAmount();
     }
 
@@ -143,10 +147,10 @@ public class ProductExtra extends AppCompatActivity {
         }
         final SweetAlertDialog pDialog = new SweetAlertDialog(ProductExtra.this, SweetAlertDialog.PROGRESS_TYPE);
         pDialog.getProgressHelper().setBarColor(getResources().getColor(R.color.colorPrimary));
-        pDialog.setTitleText("Cargando si");
+        pDialog.setTitleText("Cargando ");
         pDialog.setCancelable(false);
         pDialog.show();
-        Log.d("addProductData",product.getProductId()+" "+variantId+" "+variantName+" "+variantPrice+" "+product.getProductName()+" "+ quantity);
+        Log.d("addProductData", product.getProductId() + " " + variantId + " " + variantName + " " + variantPrice + " " + product.getProductName() + " " + quantity);
         Api.getClient().addToCart(product.getProductId(),
                 MainActivity.userId,
                 variantId,
@@ -196,6 +200,7 @@ public class ProductExtra extends AppCompatActivity {
                 });
 
     }
+
     public void showCustomAlertDialog(final Context context, String title, String msg, int type) {
         SweetAlertDialog alertDialog = new SweetAlertDialog(context, type);
         alertDialog.setTitleText(title);
@@ -214,6 +219,7 @@ public class ProductExtra extends AppCompatActivity {
             }
         });
     }
+
     private void setExtraList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(ProductExtra.this);
         recyclerView.setLayoutManager(linearLayoutManager);

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background3"
+    android:background="@drawable/background1"
     tools:context="com.duha.foodordering.Activities.Login">
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="50dp"
             android:layout_marginTop="50dp"
-            android:src="@drawable/foodappportal11" />
+            android:src="@drawable/foodappportal" />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/emailLayout"

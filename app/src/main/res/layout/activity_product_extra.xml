@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/quantityLayout"
             android:layout_marginTop="10dp"
-            android:text="Agrege Extras"
+            android:text="Colores"
             android:textColor="@color/colorPrimary"
             android:textSize="17sp" />
 
@@ -137,7 +137,7 @@
             android:layout_toLeftOf="@+id/totalAmount"
             android:layout_below="@+id/recyclerView"
             android:layout_marginTop="20dp"
-            android:text="$ "
+            android:text=" "
             android:textColor="@color/black"
             android:textSize="16sp" />
         <TextView

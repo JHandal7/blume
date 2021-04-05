@@ -82,12 +82,12 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListViewHolder> {
             holder.extraPrice.setVisibility(View.VISIBLE);
             holder.extraCount.setVisibility(View.VISIBLE);
             holder.extraCount.setText(cartProducts.get(position).getExtra().size() + " Extra:");
-            holder.extraPrice.setText(MainActivity.currency + " " + String.format("%.2f",extraAmount));
+            holder.extraPrice.setText(MainActivity.currency + " " + String.format("%.2f", extraAmount));
+            //  holder.extraPrice.setText(""); }
+
+            // holder.quantity.setText(cartProducts.get(position).getVariants().getVarquantity() + " Cantidad:");
+            holder.quantity.setText("Cantidad: " + cartProducts.get(position).getVariants().getVarquantity());
         }
-
-       // holder.quantity.setText(cartProducts.get(position).getVariants().getVarquantity() + " Cantidad:");
-        holder.quantity.setText("Cantidad: "+cartProducts.get(position).getVariants().getVarquantity() );
-
         if (position == cartProducts.size() - 1) {
             holder.totalAmount.setVisibility(View.VISIBLE);
             holder.txtGurantee.setText(Html.fromHtml(context.getResources().getString(R.string.secure_payment_text)));
