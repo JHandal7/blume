@@ -73,7 +73,7 @@ public class EditCart extends AppCompatActivity {
         for (int i = 0; i < EditExtrasAdapter.extraPriceList.size(); i++) {
             totalAmount = totalAmount + EditExtrasAdapter.extraPriceList.get(i);
         }
-        EditCart.totalAmount.setText(String.format("%.2f",totalAmount));
+        EditCart.totalAmount.setText(String.format("%.2f", totalAmount));
     }
 
     private void getIntentData() {
@@ -83,7 +83,9 @@ public class EditCart extends AppCompatActivity {
         orderLimit = intent.getStringExtra("productOrderLimit");
         textViewList.get(0).setText(productName);
         textViewList.get(2).setText("Price: " + MainActivity.currency + " ");
+        // textViewList.get(2).setText("");
         textViewList.get(3).setText(MainActivity.currency + " ");
+        //textViewList.get(3).setText("");
         Picasso.with(EditCart.this)
                 .load(intent.getStringExtra("productImage"))
                 .placeholder(R.drawable.item_not_added)
@@ -95,6 +97,7 @@ public class EditCart extends AppCompatActivity {
         textViewList.get(4).setText(quantity + "");
         productPriceWithQuantity = (Double.parseDouble(productPrice)) * quantity;
         textViewList.get(1).setText(String.format("%.2f", productPriceWithQuantity));
+      //  textViewList.get(1).setText("");
         setTotalAmount();
     }
 
@@ -190,6 +193,7 @@ public class EditCart extends AppCompatActivity {
                 });
 
     }
+
     public void showCustomAlertDialog(final Context context, String title, String msg, int type) {
         SweetAlertDialog alertDialog = new SweetAlertDialog(context, type);
         alertDialog.setTitleText(title);
@@ -206,6 +210,7 @@ public class EditCart extends AppCompatActivity {
             }
         });
     }
+
     private void setExtraList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(EditCart.this);
         recyclerView.setLayoutManager(linearLayoutManager);

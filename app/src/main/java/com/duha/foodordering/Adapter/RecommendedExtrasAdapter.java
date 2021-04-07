@@ -57,8 +57,8 @@ public class RecommendedExtrasAdapter extends RecyclerView.Adapter<RecommendedEx
     public void onBindViewHolder(RecommededExtrasViewHolder holder, int position) {
         extraPriceList.add((double) 0);
         holder.textViewList.get(0).setText(extraList.get(position).getExtraname());
-        holder.textViewList.get(1).setText(String.format("%.2f", Double.parseDouble(extraList.get(position).getExtraprice())));
-        holder.textViewList.get(2).setText(MainActivity.currency + " ");
+        holder.textViewList.get(1).setText("");//holder.textViewList.get(1).setText(String.format("%.2f", Double.parseDouble(extraList.get(position).getExtraprice())));
+        holder.textViewList.get(2).setText("");
     }
 
     @Override
@@ -120,7 +120,7 @@ public class RecommendedExtrasAdapter extends RecyclerView.Adapter<RecommendedEx
                     quantity = (Integer.parseInt(textViewList.get(3).getText().toString())) + 1;
                     textViewList.get(3).setText(quantity + "");
 
-                    textViewList.get(1).setText(String.format("%.2f",((Double.parseDouble(extraList.get(getAdapterPosition()).getExtraprice())) * quantity)));
+                  textViewList.get(1).setText(""); // textViewList.get(1).setText(String.format("%.2f", ((Double.parseDouble(extraList.get(getAdapterPosition()).getExtraprice())) * quantity)));
                     extraPriceList.set(getAdapterPosition(), ((Double.parseDouble(extraList.get(getAdapterPosition()).getExtraprice())) * quantity));
                     setTotalAmount();
                     Log.d("extraPriceList", extraPriceList.toString());
@@ -151,7 +151,7 @@ public class RecommendedExtrasAdapter extends RecyclerView.Adapter<RecommendedEx
                         quantity = (Integer.parseInt(textViewList.get(3).getText().toString())) - 1;
                         textViewList.get(3).setText(quantity + "");
 
-                        textViewList.get(1).setText(String.format("%.2f",((Double.parseDouble(extraList.get(getAdapterPosition()).getExtraprice())) * quantity)));
+                        textViewList.get(1).setText("");//textViewList.get(1).setText(String.format("%.2f", ((Double.parseDouble(extraList.get(getAdapterPosition()).getExtraprice())) * quantity)));
                         extraPriceList.set(getAdapterPosition(), ((Double.parseDouble(extraList.get(getAdapterPosition()).getExtraprice())) * quantity));
                         setTotalAmount();
                     } else {
@@ -196,6 +196,6 @@ public class RecommendedExtrasAdapter extends RecyclerView.Adapter<RecommendedEx
         for (int i = 0; i < extraPriceList.size(); i++) {
             totalAmount = totalAmount + extraPriceList.get(i);
         }
-        ProductExtra.totalAmount.setText(String.format("%.2f",totalAmount));
+        ProductExtra.totalAmount.setText(String.format("%.2f", totalAmount));
     }
 }

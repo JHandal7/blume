@@ -60,7 +60,7 @@ public class EditExtrasAdapter extends RecyclerView.Adapter<EditExtrasAdapter.Re
         extraPriceList.add(Double.parseDouble(extraList.get(position).getExtraprice())*Double.parseDouble(extraList.get(position).getExtraquantity()));
         holder.textViewList.get(0).setText(extraList.get(position).getExtraname());
         holder.textViewList.get(1).setText(String.format("%.2f", (Double.parseDouble(extraList.get(position).getExtraprice())*Double.parseDouble(extraList.get(position).getExtraquantity()))));
-        holder.textViewList.get(2).setText(MainActivity.currency + " ");
+       holder.textViewList.get(2).setText(MainActivity.currency+" ");
         holder.textViewList.get(3).setText(extraList.get(position).getExtraquantity());
 
         extraJsonObject = new JSONObject();
