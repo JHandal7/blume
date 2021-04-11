@@ -75,8 +75,8 @@ public class MainActivity extends AppCompatActivity {
             from = intent.getStringExtra("from");
             if (from.equalsIgnoreCase("signUp")) {
                 Config.showCustomAlertDialog(MainActivity.this,
-                        "Verification email sent successfully",
-                        "Please check your inbox and confirm your email address. The email may take upto 5 minutes to reach your inbox\n\nIf you didn't receive email from us, make sure to check your spam folder.",
+                        "Correo de verificacion enviado exitosamente",
+                        "Por favor revise su cuenta de correo y verifique este mensaje. \n\n Asi quedara listo para hacer sus compras",
                         SweetAlertDialog.WARNING_TYPE);
             }
         } catch (Exception e) {

@@ -64,7 +64,7 @@ public class MyOrderedProductsDetailPage extends Fragment {
         if (orderes.get(pos).getCurrency().equalsIgnoreCase("USD"))
             currency = "S/";
         else
-            currency = "₹";
+            currency = "S/";
         textViews.get(0).setText(orderes.get(pos).getOrderid());
         textViews.get(1).setText(orderes.get(pos).getOrderdate());
         textViews.get(3).setText(orderes.get(pos).getPaymode());
