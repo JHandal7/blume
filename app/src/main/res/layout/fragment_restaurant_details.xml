@@ -71,7 +71,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Acerca de Nosotros:"
+                            android:text="Delivery:"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorPrimary" />
 
@@ -179,7 +179,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:autoLink="phone"
-                                android:text="947914149"
+                                android:text="987520530"
                                 android:textColor="#170F0F"
                                 android:textSize="12sp" />
                         </LinearLayout>
@@ -230,7 +230,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Map and Navigation"
+                            android:text="Mapas y Navegacion"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorPrimary" />
 
@@ -252,7 +252,7 @@
                                 android:layout_height="40dp"
                                 android:layout_marginRight="5dp"
                                 android:background="@color/colorPrimary"
-                                android:text="VIEW"
+                                android:text="VISTA"
                                 android:textColor="#ffffff" />
 
                             <Button
@@ -261,7 +261,7 @@
                                 android:layout_height="40dp"
                                 android:layout_marginLeft="5dp"
                                 android:background="@color/colorPrimary"
-                                android:text="NAVIGATE"
+                                android:text="NAVEGUE"
                                 android:textColor="#ffffff" />
                         </LinearLayout>
 
@@ -283,7 +283,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Know Us Better:"
+                            android:text="Instrucciones de Delivery:"
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@color/colorPrimary" />
 

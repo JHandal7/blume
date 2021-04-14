@@ -179,7 +179,7 @@
                     android:layout_height="wrap_content"
                     android:padding="3dp"
                     android:gravity="right"
-                    android:text="Mas Detalles >"
+                    android:text="Delivery ---->"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="14sp"
                     android:textStyle="bold" />

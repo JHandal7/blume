@@ -27,11 +27,11 @@
             <item
                 android:id="@+id/faq"
                 android:icon="@drawable/menu_faq_icon"
-                android:title="FAQ" />
+                android:title="Cuentas para Transferencias" />
             <item
                 android:id="@+id/email"
                 android:icon="@drawable/email_icon"
-                android:title="Email" />
+                android:title="Correo" />
             <item
                 android:id="@+id/call"
                 android:icon="@drawable/contact_icon"

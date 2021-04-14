@@ -23,7 +23,7 @@
             <ImageView
                 android:id="@+id/categoryImage"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="120dp"
                 android:layout_margin="5dp"
                 android:src="@drawable/splashscreen" />
 
@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/categoryImage"
                 android:layout_centerHorizontal="true"
-                android:maxLines="4"
+                android:maxLines="6"
                 android:layout_margin="10dp"
                 android:text="as"
                 android:textColor="@color/black"

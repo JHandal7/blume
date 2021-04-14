@@ -254,7 +254,7 @@
                             android:id="@+id/paypal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Pague con POS" />
+                            android:text="Transferencia Bancaria" />
 
                         <RadioButton
                             android:id="@+id/cod"

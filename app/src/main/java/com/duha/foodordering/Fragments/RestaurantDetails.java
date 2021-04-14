@@ -65,7 +65,7 @@ public class RestaurantDetails extends Fragment {
         view = inflater.inflate(R.layout.fragment_restaurant_details, container, false);
         ButterKnife.bind(this, view);
         activity = (Activity) view.getContext();
-        MainActivity.title.setText("About Us");
+        MainActivity.title.setText("Delivery");
         setData();
         return view;
     }
