@@ -57,7 +57,7 @@ public class MapViewActivity extends FragmentActivity implements OnMapReadyCallb
                 finish();
             }
         });
-        title.setText("Our Location");
+        title.setText("Nuestra localizacion");
         mapFragment.getMapAsync(this);
     }
 
