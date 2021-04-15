@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background1"
-    tools:context="com.duha.foodordering.Activities.Login">
+    tools:context="com.duha.blume.Activities.Login">
 
     <ImageView
         android:id="@+id/back"

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:descendantFocusability="blocksDescendants"
     android:orientation="vertical"
-    tools:context="com.duha.foodordering.Fragments.Home">
+    tools:context="com.duha.blume.Fragments.Home">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recommendedItemsRecyclerView"
